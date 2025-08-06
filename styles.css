@@ -4,6 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+  scroll-behavior: smooth;
+}
 
 body {
     font-family: Arial, sans-serif;
@@ -12,7 +15,6 @@ body {
 }
 
 /* ===================== HERO ===================== */
-
 
 .navbar {
     display: flex;
@@ -25,6 +27,7 @@ body {
     width: 100%;
     z-index: 1000;
 }
+
 
 .logo {
     font-size: 22px;
@@ -48,7 +51,15 @@ body {
     border-bottom: 2px solid black;
 }
 
+.try {
+  background: rebeccapurple;
+  margin-top: 5rem;
+  scroll-margin-top: 6rem;
+}
+
 .hero {
+    scroll-margin-top: 6rem;
+    margin-top: 5rem;
     position: relative;
     height: 50vh;
     background: url('img/header.png') center/cover no-repeat;
@@ -125,7 +136,12 @@ body {
   min-width: 250px;
   color: white;
   backdrop-filter: blur(5px);
+  transition: transform 0.3s ease;
 }
+.hero .card:hover {
+  transform: translateY(-5px);
+}
+
 
 .hero-cards h3 {
   font-size: 1.1rem;
@@ -381,6 +397,7 @@ body {
 }
 /* ===================== NOSOTROS ===================== */
 .about {
+  scroll-margin-top: 6rem;
     padding: 60px 20px;
     background: #eee;
     text-align: center;
